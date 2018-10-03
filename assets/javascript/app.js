@@ -1,4 +1,4 @@
-var webSocket = $.simpleWebSocket({ url: 'http://alan.cs.gsu.edu:3030/' });
+/* var webSocket = $.simpleWebSocket({ url: 'http://alan.cs.gsu.edu:3030/' });
     
     // reconnected listening
     webSocket.listen(function(message) {
@@ -13,4 +13,16 @@ $("#submit-btn").on("click", function(){
     }).fail(function(e) {
         // error sending
     });
+}); */
+
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+    host: "http://alan.cs.gsu.edu",
+    user: "deployme",
+    password: "Vdq124uiyR4"
+  database: 'database name'
+});
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Connected!');
 });

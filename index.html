@@ -12,32 +12,33 @@
 </head>
 
 <body>
-    <div class="container w-100 h-100">
-        <div class="header sticky-top w-100">
-            <div class="row w-100">
-                <div class="col-12 text-center">
-                    <h1>DeployMe</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 d-inline-flex justify-content-center">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Personal Info</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Training & Experience</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="header sticky-top w-100">
+        <div class="row w-100">
+            <div class="col-12 text-center">
+                <h1>DeployMe</h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 d-inline-flex justify-content-center">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Personal Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Training & Experience</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container w-100 h-100">
+
 
         <div class="row">
-            <form class="w-100">
+            <form class="w-100 mt-4">
                 <div id="personal-info">
                     <p><i>Fill out each question and click "Submit" at the bottom of the page</i></p>
                     <div class="row mt-4">
@@ -125,7 +126,7 @@
                         </div>
                     </div>
                     <div class="row w-100 d-inline-flex justify-content-end">
-                        <button type="button" class="btn">+Add Language</button>
+                        <button type="button" class="btn" id="add-language-btn">+Add additional language</button>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
@@ -133,7 +134,7 @@
                             <select id="health-comm-skills" class="form-control form-check-label" required="true"></select>
                         </div>
                         <div class="col-6 form-group">
-                            <label for="proficiency">Language Proficiency</label>
+                            <label for="proficiency">Skill Proficiency</label>
                             <select id="proficiency" class="form-control" required="true">
                                 <option></option>
                                 <option>Novice</option>
@@ -141,11 +142,51 @@
                                 <option>Advanced</option>
                             </select>
                         </div>
+                        <div class="row w-100 d-inline-flex justify-content-end">
+                            <button type="button" class="btn" id="add-skill-btn">+Add additional skill</button>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
-                            <label for="partnership-skills">Partnership Skills</label>
-                            <select id="partnership-skills" class="form-control" required="true"></select>
+                            <p>Partnership Skills</p>
+                            <p>Do you have any experience working with any of the following groups? <i>Check all that
+                                    apply</i></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-1">
+                                <label class="form-check-label" for="ps-1">
+                                    State, local, territorial, or tribal health departments
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-2">
+                                <label class="form-check-label" for="ps-2">
+                                    Clinicians and other public health organizations
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-1">
+                                <label class="form-check-label" for="ps-1">
+                                    State, local, territorial, or tribal health departments
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-1">
+                                <label class="form-check-label" for="ps-1">
+                                    State, local, territorial, or tribal health departments
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-1">
+                                <label class="form-check-label" for="ps-1">
+                                    State, local, territorial, or tribal health departments
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-1">
+                                <label class="form-check-label" for="ps-1">
+                                    State, local, territorial, or tribal health departments
+                                </label>
+                            </div>
                         </div>
                         <div class="col-6 form-group">
                             <label for="proficiency">Language Proficiency</label>
