@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DeployMe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container w-100 h-100">
+        <div class="header sticky-top w-100">
+            <div class="header row w-100">
+                <div class="col-12 text-center">
+                    <h1>DeployMe</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-inline-flex justify-content-center">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Personal Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Training & Experience</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <form class="w-100">
+                <div id=#personal-info>
+                    <p><i>Fill out each question and click "Submit" at the bottom of the page</i></p>
+                    <div class="row mt-4">
+                        <div class="col-6 form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" id="first-name" required="true">
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" required="true">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="user-id">User ID</label>
+                            <input type="text" class="form-control" id="first-name" required="true">
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" pattern="^\d*$" required="true">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="agency">Agency</label>
+                            <select id="agency" class="form-control" required="true">
+                                <option></option>
+                                <option>Agency for Children and Families (ACF)</option>
+                                <option>Administration for Community Living (ACL)</option>
+                                <option>Agency for Healthcare Research and Quality (AHRQ)</option>
+                                <option>Agency for Toxic Substances and Disease Registry (ATSDR)</option>
+                                <option>Centers for Disease Control and Prevention</option>
+                                <option>Centers for Medicare & Medicaid Services</option>
+                                <option>Food and Drug Administration</option>
+                                <option>Health Resources and Services Administration (HRSA)</option>
+                                <option>Indian Health Service (IHS)</option>
+                                <option>National Institute of Health</option>
+                            </select>
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="job-series">Job Series</label>
+                            <select id="job-series" class="form-control" required="true">
+                                <option></option>
+                                <option>CDC</option>
+                                <option>HHS</option>
+                                <option>Other federal agency</option>
+                                <option>State government</option>
+                                <option>Local government</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="office">Office (CIO, Office Name)</label>
+                            <input type="text" class="form-control" id="office" required="true">
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="employee-type">Type of Employee</label>
+                            <select id="employee-type" class="form-control" required="true">
+                                <option></option>
+                                <option>1001 - Health Communication Specialist</option>
+                                <option>0685 - Public Health Advisor</option>
+                                <option>0602 - Medical Officer</option>
+                                <option>0601 - General Health Science</option>
+                                <option>0089 - Emergency Management Specialist</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="skills">
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="language">Languages</label>
+                            <select id="language" class="form-control" required="true"></select>
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="proficiency">Language Proficiency</label>
+                            <select id="proficiency" class="form-control" required="true">
+                                <option></option>
+                                <option>Novice</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row w-100 d-inline-flex justify-content-end">
+                        <button type="button" class="btn">+</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="language">Languages</label>
+                            <select id="language" class="form-control"></select>
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="proficiency">Language Proficiency</label>
+                            <select id="proficiency" class="form-control">
+                                <option></option>
+                                <option>Novice</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="training">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+    <script src="" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
