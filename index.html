@@ -125,16 +125,31 @@
                         </div>
                     </div>
                     <div class="row w-100 d-inline-flex justify-content-end">
-                        <button type="button" class="btn">+</button>
+                        <button type="button" class="btn">+Add Language</button>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
-                            <label for="language">Languages</label>
-                            <select id="language" class="form-control"></select>
+                            <label for="health-comm-skills">Health Communication Skills</label>
+                            <select id="health-comm-skills" class="form-control form-check-label" required="true"></select>
                         </div>
                         <div class="col-6 form-group">
                             <label for="proficiency">Language Proficiency</label>
-                            <select id="proficiency" class="form-control">
+                            <select id="proficiency" class="form-control" required="true">
+                                <option></option>
+                                <option>Novice</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="partnership-skills">Partnership Skills</label>
+                            <select id="partnership-skills" class="form-control" required="true"></select>
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="proficiency">Language Proficiency</label>
+                            <select id="proficiency" class="form-control" required="true">
                                 <option></option>
                                 <option>Novice</option>
                                 <option>Intermediate</option>
@@ -154,7 +169,7 @@
 
     <script src="assets/javascript/app.js" async defer></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-<script type="text/javascript" src="jquery.simple.websocket.js"></script>
+    <script type="text/javascript" src="jquery.simple.websocket.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 </body>

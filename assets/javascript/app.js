@@ -1,4 +1,4 @@
-var webSocket = $.simpleWebSocket({ url: 'ws://127.0.0.1:3000/' });
+var webSocket = $.simpleWebSocket({ url: 'http://alan.cs.gsu.edu:3030/' });
     
     // reconnected listening
     webSocket.listen(function(message) {
