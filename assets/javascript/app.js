@@ -1,0 +1,16 @@
+var webSocket = $.simpleWebSocket({ url: 'ws://127.0.0.1:3000/' });
+    
+    // reconnected listening
+    webSocket.listen(function(message) {
+        console.log(message.text);
+    });
+
+    
+
+$("#submit-btn").on("click", function(){
+    webSocket.send({ 'text': 'hello' }).done(function() {
+        // message send
+    }).fail(function(e) {
+        // error sending
+    });
+});
