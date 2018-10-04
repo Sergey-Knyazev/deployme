@@ -33,6 +33,7 @@ $("#submit-btn").on("click", function(){
         url: "deployme/test.py",
         method: "POST",
         datatype: "json",
+        async: false,
         data: {'firstName': firstName,'lastName': lastName, 'key':'dummyvalue'},
 
         success: function(response){
