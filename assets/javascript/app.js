@@ -30,7 +30,7 @@ $("#submit-btn").on("click", function(){
     let lastName = $("#last-name").val().trim();
 
     $.ajax({
-        url: "test.py",
+        url: "/test.py",
         method: "POST",
         datatype: "json",
         data: {'firstName': firstName,'lastName': lastName, 'key':'dummyvalue'},
