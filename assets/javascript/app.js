@@ -5,16 +5,21 @@
         console.log(message.text);
     });
 
-    
-
-$("#submit-btn").on("click", function(){
     webSocket.send({ 'text': 'hello' }).done(function() {
         // message send
     }).fail(function(e) {
         // error sending
-    });
-}); */
+    }); */
 
+$("#submit-btn").on("click", function(){
+    $.ajax({
+        url: "http://alan.cs.gsu.edu",
+        success: function(data){
+            console.log("hi");
+        }
+    });
+});
+/* 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host: "http://alan.cs.gsu.edu",
@@ -25,4 +30,4 @@ const connection = mysql.createConnection({
 connection.connect((err) => {
   if (err) throw err;
   console.log('Connected!');
-});
+}); */
