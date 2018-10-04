@@ -11,14 +11,14 @@
         // error sending
     }); */
 
-$("#submit-btn").on("click", function(){
+/* $("#submit-btn").on("click", function(){
     $.ajax({
         url: "http://alan.cs.gsu.edu",
         success: function(data){
             console.log("hi");
         }
     });
-});
+}); */
 /* 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
