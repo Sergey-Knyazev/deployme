@@ -36,8 +36,8 @@ body {
     text-decoration: none;
 }
 
-#qry-search-btn:active {
-
+#qry-select-btn {
+    text-decoration: none;
 }
 
 .form-label {
