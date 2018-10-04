@@ -31,7 +31,7 @@ $("#submit-btn").on("click", function(){
 
     $.ajax({
         url: "deployme/test.py",
-        method: "POST",
+        type: "post",
         datatype: "json",
         async: false,
         data: {'firstName': firstName,'lastName': lastName, 'key':'dummyvalue'},
