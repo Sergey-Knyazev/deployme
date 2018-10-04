@@ -27,7 +27,7 @@ connection.connect((err) => {
 
 $("#submit-btn").on("click", function(){
     let firstName = $("#first-name").val().trim();
-    let lastName $("#last-name").val().trim();
+    let lastName = $("#last-name").val().trim();
 
     $.ajax({
         url: "http://alan.cs.gsu.edu/deployme/test.py",
