@@ -30,7 +30,7 @@ $("#submit-btn").on("click", function(){
         url: "http://alan.cs.gsu.edu/deployme/test.py",
         method: "POST",
         datatype: "json",
-        data: {'key':'value','key2':'value2'},
+        data: {'firstName':'firstName','lastName':'lastName'},
 
         success: function(response){
             console.log("yay!");
