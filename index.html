@@ -12,15 +12,30 @@
 </head>
 
 <body>
-    <div class="header sticky-top w-100">
-        <div class="row w-100">
-            <div class="col-12 text-center p-4 d-flex">
-                <img class="logo" src="assets/images/deployme_icon.png">
-                <h1>DeployMe</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container w-100 h-100">
+        <div class="header sticky-top w-100">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+                    <img class="logo" src="assets/images/deployme_icon.png">
+                    <a class="navbar-brand flex-grow-1" href="#">DeployMe</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <div class="d-flex justify-content-right"></div>
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="query.html">Admin<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row w-100">
+                    <div class="col-12 text-center">
+                        <h1>Deployer Profile</h1>
+                    </div>
+                </div>
+                </div>
 
 
         <div class="row">
@@ -30,27 +45,27 @@
                     <div class="row mt-4">
                         <div class="col-6 form-group">
                             <label class="form-label" for="first-name">First Name</label>
-                            <input type="text" class="form-control" id="first-name" required="true">
+                            <input type="text" class="form-control" id="first-name" required="false">
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="last-name">Last Name</label>
-                            <input type="text" class="form-control" id="last-name" required="true">
+                            <input type="text" class="form-control" id="last-name" required="false">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
                             <label class="form-label" for="user-id">User ID</label>
-                            <input type="text" class="form-control" id="first-name" required="true">
+                            <input type="text" class="form-control" id="first-name" required="false">
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="phone-number">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" pattern="^\d*$" required="true">
+                            <input type="text" class="form-control" id="phone" pattern="^\d*$" required="false">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
                             <label class="form-label" for="agency">Agency</label>
-                            <select id="agency" class="form-control" required="true">
+                            <select id="agency" class="form-control" required="false">
                                 <option></option>
                                 <option>Agency for Children and Families (ACF)</option>
                                 <option>Administration for Community Living (ACL)</option>
@@ -66,7 +81,7 @@
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="job-series">Job Series</label>
-                            <select id="job-series" class="form-control" required="true">
+                            <select id="job-series" class="form-control" required="false">
                                 <option></option>
                                 <option>CDC</option>
                                 <option>HHS</option>
@@ -79,11 +94,11 @@
                     <div class="row">
                         <div class="col-6 form-group">
                             <label class="form-label" for="office">Office (CIO, Office Name)</label>
-                            <input type="text" class="form-control" id="office" required="true">
+                            <input type="text" class="form-control" id="office" required="false">
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="employee-type">Type of Employee</label>
-                            <select id="employee-type" class="form-control" required="true">
+                            <select id="employee-type" class="form-control" required="false">
                                 <option></option>
                                 <option>1001 - Health Communication Specialist</option>
                                 <option>0685 - Public Health Advisor</option>
@@ -99,11 +114,11 @@
                     <div class="row">
                         <div class="col-6 form-group">
                             <label class="form-label" for="language">Languages</label>
-                            <select id="language" class="form-control" required="true"></select>
+                            <select id="language" class="form-control" required="false"></select>
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="proficiency">Language Proficiency</label>
-                            <select id="proficiency" class="form-control" required="true">
+                            <select id="proficiency" class="form-control" required="false">
                                 <option></option>
                                 <option>Novice</option>
                                 <option>Intermediate</option>
@@ -117,11 +132,11 @@
                     <div class="row">
                         <div class="col-6 form-group">
                             <label class="form-label" for="health-comm-skills">Health Communication Skills</label>
-                            <select id="health-comm-skills" class="form-control form-check-label" required="true"></select>
+                            <select id="health-comm-skills" class="form-control form-check-label" required="false"></select>
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="proficiency">Skill Proficiency</label>
-                            <select id="proficiency" class="form-control" required="true">
+                            <select id="proficiency" class="form-control" required="false">
                                 <option></option>
                                 <option>Novice</option>
                                 <option>Intermediate</option>

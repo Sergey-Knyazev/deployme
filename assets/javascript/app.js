@@ -11,14 +11,7 @@
         // error sending
     }); */
 
-/* $("#submit-btn").on("click", function(){
-    $.ajax({
-        url: "http://alan.cs.gsu.edu",
-        success: function(data){
-            console.log("hi");
-        }
-    });
-}); */
+
 /* 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
@@ -31,3 +24,16 @@ connection.connect((err) => {
   if (err) throw err;
   console.log('Connected!');
 }); */
+
+$("#submit-btn").on("click", function(){
+    $.ajax({
+        url: "http://alan.cs.gsu.edu/deployme/test.py",
+        method: "POST",
+        datatype: "json",
+        data: {'key':'value','key2':'value2'},
+
+        success: function(response){
+            console.log("yay!");
+        }
+    });
+});
