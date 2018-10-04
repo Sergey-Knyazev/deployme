@@ -34,6 +34,8 @@ $("#submit-btn").on("click", function(){
 
         success: function(response){
             console.log("yay!");
+            alert(response.message);
+            alert(response.keys);
         }
     });
 });
