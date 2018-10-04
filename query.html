@@ -47,10 +47,15 @@
             <form class="w-100 mt-4">
                 <div>
                     <p><i>Enter staffing requirements and click "Search"</i></p>
-                    <div class="row">
+                    <div class="row language-box-admin">
                         <div class="col-6 form-group">
                             <label class="form-label" for="language-select">Languages</label>
-                            <select id="language-select" class="form-control" required="true"></select>
+                            <select id="language-select" class="form-control" required="true">
+                                <option></option>
+                                <option>French</option>
+                                <option>Russian</option>
+                                <option>Korean</option>
+                            </select>
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="lang-proficiency-select">Language Proficiency</label>
@@ -63,12 +68,17 @@
                         </div>
                     </div>
                     <div class="row w-100 d-inline-flex justify-content-end">
-                        <button type="button" class="btn" id="add-language-btn-admin">+Add additional language</button>
+                        <button type="button" class="btn add-field-btn" id="add-language-btn-admin">+Add additional language</button>
                     </div>
-                    <div class="row">
+                    <div class="row health-skills-box-admin">
                         <div class="col-6 form-group">
                             <label class="form-label" for="health-comm-skills-select">Health Communication Skills</label>
-                            <select id="health-comm-skills-select" class="form-control form-check-label" required="true"></select>
+                            <select id="health-comm-skills-select" class="form-control form-check-label" required="true">
+                                <option></option>
+                                <option>Developing social media content and strategy</option>
+                                <option>Strategic communication planning</option>
+                                <option>Writing, editing, or creating content</option>
+                            </select>
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="hc-proficiency-select">Skill Proficiency</label>
@@ -79,36 +89,40 @@
                                 <option>Advanced</option>
                             </select>
                         </div>
-                        <div class="row w-100 d-inline-flex justify-content-end">
-                            <button type="button" class="btn" id="add-skill-btn">+Add additional skill</button>
-                        </div>
+                    </div>
+                    <div class="row w-100 d-inline-flex justify-content-end">
+                        <button type="button" class="btn add-field-btn" id="add-skill-btn">+Add additional skill</button>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
                             <label class="form-label" for="employee-type-select">Type of Employee</label>
                             <select id="employee-type-select" class="form-control" required="true">
                                 <option></option>
-                                <option>1001 - Health Communication Specialist</option>
-                                <option>0685 - Public Health Advisor</option>
-                                <option>0602 - Medical Officer</option>
-                                <option>0601 - General Health Science</option>
-                                <option>0089 - Emergency Management Specialist</option>
+                                <option>FTE</option>
+                                <option>Contractor</option>
+                                <option>Title 42/Associate Service Fellow</option>
+                                <option>ORISE Fellow</option>
+                                <option>Other</option>
                             </select>
+                            <label class="form-label" for="employee-type-select">Specify other</label>
+                            <input id="employee-type-select" class="form-control" required="true"></input>
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="sme-select">Subject Matter Expertise</label>
                             <select multiple class="form-control" id="sme-select">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                <option>Pandemic influenza or other infectious disease outbreak</option>
+                                <option>Natural disasters and severe weather</option>
+                                <option>Biological incident</option>
+                                <option>Chemical emergencies</option>
+                                <option>Nuclear/radiation incident</option>
+                                <option>Cyber incident</option>
+                                <option>Other</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="btn" id="qry-search-btn">Search</button>
+                    <button class="btn" id="qry-search-btn"><a href="query-results.html">Search</a></button>
                 </div>
             </form>
         </div>

@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="status.html">Status</a>
                     </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="profile.html">User Profile</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -61,14 +64,14 @@
                             <th>Response B</th>
                         </thead>
                         <tbody>
-                            <tr data-toggle="collapse" data-target="#qr-1" class="clickable">
+                            <tr>
                                 <td>Jane Doe</td>
                                 <td>FTE</td>
                                 <td>Risk Communication</td>
                                 <td>Environmental Health</td>
                                 <td>Spanish</td>
                                 <td>
-                                    <button>View</button>
+                                    <button data-toggle="collapse" type="button" data-target="#qr-1" class="clickable">View</button>
                                 </td>
                                 <td>
                                     <div class="form-check">
@@ -84,16 +87,42 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="td-toggle" colspan="7">
-                                    <div id="qr-1" class="collapse toggle-content">sample text</div>
+                                <td class="td-toggle" colspan="8">
+                                    <div id="qr-1" class="collapse toggle-content">
+                                        <table class="w-100">
+                                            <thead>
+                                                <th>Response</th>
+                                                <th>Location</th>
+                                                <th>Date Start</th>
+                                                <th>Date End</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2018 Hurricane</td>
+                                                    <td>Greenville, SC</td>
+                                                    <td>9/21/2018</td>
+                                                    <td>9/27/2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2014 Ebola</td>
+                                                    <td>Conakry, Guinea</td>
+                                                    <td>6/15/2015</td>
+                                                    <td>6/30/2015</td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </td>
                             </tr>
-                            <tr data-toggle="collapse" data-target="#qr-2" class="clickable">
+                            <tr>
                             <td>John Doe</td>
                             <td>Contractor</td>
                             <td>Public Relations</td>
                             <td>Virology</td>
                             <td>French, German</td>
+                            <td>
+                                <button data-toggle="collapse" type="button" data-target="#qr-2" class="clickable">View</button>
+                            </td>
                             <td>
                                 <div class="form-check">
                                     <input class="form-check-input position-static" type="radio" name="qr-1a" id="qr-1a"
@@ -108,7 +137,7 @@
                             </td>
                             </tr>
                             <tr>
-                                <td class="td-toggle" colspan="7">
+                                <td class="td-toggle" colspan="8">
                                     <div id="qr-2" class="collapse toggle-content">sample text</div>
                                 </td>
                             </tr>

@@ -114,10 +114,15 @@
                 </div>
 
                 <div id="skills">
-                    <div class="row">
+                    <div class="row language-box">
                         <div class="col-6 form-group">
                             <label class="form-label" for="language">Languages</label>
-                            <select id="language" class="form-control"></select>
+                            <select id="language" class="form-control">
+                                <option></option>
+                                <option>French</option>
+                                <option>Russian</option>
+                                <option>Korean</option>
+                            </select>
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="proficiency">Language Proficiency</label>
@@ -130,12 +135,17 @@
                         </div>
                     </div>
                     <div class="row w-100 d-inline-flex justify-content-end">
-                        <button type="button" class="btn" id="add-language-btn">+Add additional language</button>
+                        <button type="button" class="btn add-field-btn" id="add-language-btn">+Add additional language</button>
                     </div>
-                    <div class="row">
+                    <div class="row health-skills-box">
                         <div class="col-6 form-group">
                             <label class="form-label" for="health-comm-skills">Health Communication Skills</label>
-                            <select id="health-comm-skills" class="form-control form-check-label"></select>
+                            <select id="health-comm-skills" class="form-control form-check-label">
+                                <option></option>
+                                <option>Developing social media content and strategy</option>
+                                <option>Strategic communication planning</option>
+                                <option>Writing, editing, or creating content</option>
+                            </select>
                         </div>
                         <div class="col-6 form-group">
                             <label class="form-label" for="proficiency">Skill Proficiency</label>
@@ -146,9 +156,9 @@
                                 <option>Advanced</option>
                             </select>
                         </div>
-                        <div class="row w-100 d-inline-flex justify-content-end">
-                            <button type="button" class="btn" id="add-skill-btn">+Add additional skill</button>
-                        </div>
+                    </div>
+                    <div class="row w-100 d-inline-flex justify-content-end">
+                        <button type="button" class="btn add-field-btn" id="add-skill-btn">+Add additional skill</button>
                     </div>
                     <div class="row checkbox-section">
                         <div class="col-6 form-group">
@@ -170,25 +180,25 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-3">
                                 <label class="form-check-label" for="ps-3">
-                                    Option
+                                    Non-governmental Organizations
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-4">
                                 <label class="form-check-label" for="ps-4">
-                                    Option
+                                    FEMA and other federal government agencies
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-5">
                                 <label class="form-check-label" for="ps-5">
-                                    Option
+                                    International health organizations
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="partnership-skills" value="" id="ps-6">
                                 <label class="form-check-label" for="ps-6">
-                                    Option
+                                    Private sector organizations
                                 </label>
                             </div>
                             <br>
@@ -197,19 +207,43 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="sme" value="" id="sme-1">
                                 <label class="form-check-label" for="sme-1">
-                                    Option
+                                    Infectious Diseases
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="sme" value="" id="sme-2">
                                 <label class="form-check-label" for="sme-2">
-                                    Option
+                                    Natural Disasters and Severe Weather
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="sme" value="" id="sme-3">
                                 <label class="form-check-label" for="sme-3">
-                                    Option
+                                    Biological Incident
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="sme" value="" id="sme-4">
+                                <label class="form-check-label" for="sme-4">
+                                    Chemical Emergencies
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="sme" value="" id="sme-5">
+                                <label class="form-check-label" for="sme-5">
+                                    Nuclear/Radiation Incident
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="sme" value="" id="sme-6">
+                                <label class="form-check-label" for="sme-6">
+                                    Cyber Incident
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="sme" value="" id="sme-7">
+                                <label class="form-check-label" for="sme-7">
+                                    Other
                                 </label>
                             </div>
                         </div>
@@ -219,19 +253,20 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="experience" value="" id="ex-1">
                                 <label class="form-check-label" for="ex-1">
-                                    Option
+                                    I have worked on an emergency repsonse within my agency.
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="experience" value="" id="ex-2">
                                 <label class="form-check-label" for="ex-2">
-                                    Option
+                                    I have deployed to the field on an emergency response.
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="experience" value="" id="ex-3">
                                 <label class="form-check-label" for="ex-3">
-                                    Option
+                                    I have worked in a Joint Information Center (at agency headquarters or in the
+                                    field)
                                 </label>
                             </div>
                             <br>
@@ -240,20 +275,45 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="training-edu" value="" id="te-1">
                                 <label class="form-check-label" for="te-1">
-                                    Option
+                                    IS-100.C: Introduction to the Incident Command System, ICS 100
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="training-edu" value="" id="te-2">
                                 <label class="form-check-label" for="te-2">
-                                    Option
+                                    IS-200.B: ICS for Single Resources and Initial Action Incidents
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" class="training-edu" value="" id="te-3">
                                 <label class="form-check-label" for="te-3">
-                                    Option
+                                    IS-700.B: An Introduction to the National Incident Management System
                                 </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="training-edu" value="" id="te-4">
+                                <label class="form-check-label" for="te-4">
+                                    IS-800.C: National Response Framework, an Introduction
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="training-edu" value="" id="te-5">
+                                <label class="form-check-label" for="te-5">
+                                    Crisis and Emergency Risk Communication (CERC): Basic
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="training-edu" value="" id="te-6">
+                                <label class="form-check-label" for="te-6">
+                                    Crisis and Emergency Risk Communication (CERC): Advanced
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" class="training-edu" value="" id="te-7">
+                                <label class="form-check-label" for="te-7">
+                                    FEMA IS-242.B: Effective Communication
+                                </label>
+
                             </div>
                         </div>
                     </div>

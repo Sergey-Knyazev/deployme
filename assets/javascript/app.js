@@ -44,3 +44,103 @@ $("#submit-btn").on("click", function(){
         }
     });
 });
+
+$("#add-language-btn").on("click", function(){
+    $(".language-box").append(
+        `
+        <div class="col-6 form-group">
+            <label class="form-label" for="language">Languages</label>
+            <select id="language" class="form-control">
+                <option></option>
+                <option>French</option>
+                <option>Russian</option>
+                <option>Korean</option>
+            </select>
+        </div>
+        <div class="col-6 form-group">
+            <label class="form-label" for="proficiency">Language Proficiency</label>
+            <select id="proficiency" class="form-control">
+                <option></option>
+                <option>Novice</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        </div>
+        `
+    )
+});
+
+$("#add-skill-btn").on("click", function(){
+    $(".health-skills-box").append(
+        `
+        <div class="col-6 form-group">
+            <label class="form-label" for="health-comm-skills">Health Communication Skills</label>
+            <select id="health-comm-skills" class="form-control form-check-label">
+                <option></option>
+                <option>Developing social media content and strategy</option>
+                <option>Strategic communication planning</option>
+                <option>Writing, editing, or creating content</option>
+            </select>
+        </div>
+        <div class="col-6 form-group">
+            <label class="form-label" for="proficiency">Skill Proficiency</label>
+            <select id="proficiency" class="form-control">
+                <option></option>
+                <option>Novice</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        </div>
+        `
+    )
+});
+
+$("#add-language-btn-admin").on("click", function(){
+    $(".language-box-admin").append(
+        `
+        <div class="col-6 form-group">
+            <label class="form-label" for="language">Languages</label>
+            <select id="language" class="form-control">
+                <option></option>
+                <option>French</option>
+                <option>Russian</option>
+                <option>Korean</option>
+            </select>
+        </div>
+        <div class="col-6 form-group">
+            <label class="form-label" for="proficiency">Language Proficiency</label>
+            <select id="proficiency" class="form-control">
+                <option></option>
+                <option>Novice</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        </div>
+        `
+    )
+});
+
+$("#add-skill-btn").on("click", function(){
+    $(".health-skills-box-admin").append(
+        `
+        <div class="col-6 form-group">
+            <label class="form-label" for="health-comm-skills">Health Communication Skills</label>
+            <select id="health-comm-skills" class="form-control form-check-label">
+                <option></option>
+                <option>Developing social media content and strategy</option>
+                <option>Strategic communication planning</option>
+                <option>Writing, editing, or creating content</option>
+            </select>
+        </div>
+        <div class="col-6 form-group">
+            <label class="form-label" for="proficiency">Skill Proficiency</label>
+            <select id="proficiency" class="form-control">
+                <option></option>
+                <option>Novice</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        </div>
+        `
+    )
+});

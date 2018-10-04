@@ -21,7 +21,7 @@ body {
     flex-basis: 100% !important;
 }
 
-#add-language-btn {
+.add-field-btn {
     position: relative;
     left: 15px;
 }
@@ -33,6 +33,11 @@ body {
 #qry-search-btn {
     position: relative;
     top: 50px;
+    text-decoration: none;
+}
+
+#qry-search-btn:active {
+
 }
 
 .form-label {
