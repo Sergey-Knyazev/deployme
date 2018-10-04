@@ -26,14 +26,18 @@ connection.connect((err) => {
 }); */
 
 $("#submit-btn").on("click", function(){
+    let firstName = $("#first-name").val().trim();
+    let lastName $("#last-name").val().trim();
+
     $.ajax({
         url: "http://alan.cs.gsu.edu/deployme/test.py",
         method: "POST",
         datatype: "json",
-        data: {'firstName':'firstName','lastName':'lastName'},
+        data: {'firstName': firstName,'lastName': lastName, 'key':'dummyvalue'},
 
         success: function(response){
             console.log("yay!");
+            console.log(response);
             alert(response.message);
             alert(response.keys);
         }
