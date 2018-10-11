@@ -71,3 +71,8 @@ thead {
     bottom: 0;
 }
 
+.red-text {
+    color: red;
+    font-weight: bolder;
+}
+
