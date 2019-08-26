@@ -1,4 +1,4 @@
-# hackathon
+# CDC hackathon project
 
 The deployed version with a prototype: http://alan.cs.gsu.edu/deployme/
 
